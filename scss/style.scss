@@ -1,0 +1,60 @@
+//Media Queries
+@import "_media_queries";
+
+/* ================================
+		INICIAN MÓDULOS
+=================================*/
+
+.menuSekura { z-index: 88;}
+.portadaSekura { z-index: 8;}
+.nosotrosSekura {z-index: 7;}
+.loQueNosGuiaSekura {z-index: 6;}
+.loQueNosHaFormadoSekura { z-index: 5;}
+
+/* --------  --------*/
+.displayNone {
+	display: none;
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+}
+
+/* -------- SVG -------- */
+@import "landing/_svg.scss";
+
+
+/* -------- Preload -------- */
+@import "landing/_preload.scss";
+
+/* -------- Portada --------*/
+@import "landing/_portada.scss";
+
+/* -------- Ttimeline --------*/
+@import "landing/_timeline.scss";
+
+/* -------- Nosotros -------- */
+@import "landing/_nosotros.scss";
+
+/* -------- Lo Que Nos Guia -------- */
+@import "landing/_loQueNosGuia.scss";
+
+/* -------- Lo Que Nos Ha Formado -------- */
+@import "landing/_loQueNosHaFormado.scss";
+
+/* -------- Contenedor Slider -------- */
+@import "landing/_contenedorServicios.scss";
+
+
+/* -------- Contenedor Slider -------- */
+@import "_sitioSekura.scss";
+

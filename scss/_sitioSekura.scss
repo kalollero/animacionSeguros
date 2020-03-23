@@ -1,0 +1,264 @@
+body {
+--ceniza: #fbfbfb;
+--oxford: #262626;
+--morado: #401665;
+
+
+}
+
+.Sekura {
+
+	// Fondo Blanco
+	&__bloqueInformacion{
+		width: 40vw;
+	}
+
+	&__logoSmall {
+		height: 1.5rem;
+	}
+
+	&__nombreSeccion {
+		font-weight: 600;
+		font-size: 14px;
+		margin: 1rem 0;
+	}
+
+	&__titulo {
+		font-weight: 300;
+		color: var(--morado);
+	}
+
+	&__informacion p{
+		margin: 1rem 0;
+		font-size: 14px;
+	}
+	// Fondo Oscuro
+	&__bloqueInformacionBlanco,
+	&__bloqueInformacionBlanco &__nombreSeccion,
+	&__bloqueInformacionBlanco &__titulo,
+	&__bloqueInformacionBlanco &__informacion p {
+		color: var(--ceniza);
+	}
+}
+.menuSekura {
+	width: 100vw;
+	height: 8vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--morado);
+
+	
+	&__logo {
+		width: 40vw;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+
+	& .isologo {
+		height: 3.5vh;
+	}
+
+	&__menu {
+		width: 40vw;
+		height: 100%;
+	}
+
+}
+
+
+
+
+.portadaSekura {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--oxford);
+}
+
+
+.nosotrosSekura {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--ceniza);
+
+	&__collage {
+		width: 40vw;
+		height: 100%;
+	}
+}
+
+
+.loQueNosGuiaSekura {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--ceniza);
+
+	&__trenzado {
+		width: 40vw;
+		height: 100%;
+	}
+}
+
+.loQueNosHaFormadoSekura {
+	width: 100vw;
+	height: 140vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	background-color: var(--morado);
+	
+	& .Sekura__bloqueInformacionBlanco {
+		width: 60vw;
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		// border: 1px solid white;
+
+		& .Sekura__nombreSeccion,
+		& .Sekura__titulo,
+		& .Sekura__informacion p {
+			text-align: center;
+		}
+	}
+}
+
+.productos {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--oxford);
+
+	/* Style the tab */
+	&__botones {
+	  overflow: hidden;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	}
+
+	/* Style the buttons that are used to open the tab content */
+	&__botones button {
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	}
+
+	/* Change background color of buttons on hover */
+	&__botones button:hover {
+	  background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	&__botones button.active {
+	  background-color: #ccc;
+	}
+
+	&__informacion {
+		width: 100%;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		& .productoContenido {
+			display: none;
+			width: 50%;
+			height: 100%;
+			text-align: center;
+			border: 1px solid orange;
+			// display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+	}
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 40vw;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activo, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.activo:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.acordeones {
+	width: 40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

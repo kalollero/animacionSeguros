@@ -1,0 +1,657 @@
+@charset "UTF-8";
+/* ================================
+		INICIAN MÓDULOS
+=================================*/
+.menuSekura {
+  z-index: 88;
+}
+
+.portadaSekura {
+  z-index: 8;
+}
+
+.nosotrosSekura {
+  z-index: 7;
+}
+
+.loQueNosGuiaSekura {
+  z-index: 6;
+}
+
+.loQueNosHaFormadoSekura {
+  z-index: 5;
+}
+
+/* --------  --------*/
+.displayNone {
+  display: none;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------- SVG -------- */
+.lema {
+  fill: #FFFFFF;
+}
+
+.apple {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.iconoLineas {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.iconoColor {
+  fill: #FFFFFF;
+}
+
+.logoLineas__morado {
+  fill: none;
+  stroke: #401665;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.logoLineas__magenta {
+  fill: none;
+  stroke: #B5006B;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.logoColor__st0 {
+  fill: #401665;
+}
+
+.logoColor__st1 {
+  fill: url(#SVGID_1_);
+}
+
+.logoColor__st2 {
+  fill: url(#SVGID_2_);
+}
+
+.logoColor__st3 {
+  fill: #B5006B;
+}
+
+.logoColor__st4 {
+  fill: #C5C5C5;
+}
+
+.logoColor__st5 {
+  fill: #640057;
+}
+
+.logoColor__st6 {
+  fill: #780057;
+}
+
+.logoColor__st7 {
+  fill: #960057;
+}
+
+.logoColor__st8 {
+  fill: url(#SVGID_3_);
+}
+
+.logoColor__st9 {
+  fill: url(#SVGID_4_);
+}
+
+.logolineas__blancas {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.logoColorBlancas__blanco {
+  fill: #FFFFFF;
+}
+
+.logoColorBlancas__oxford {
+  fill: #9C9B9B;
+}
+
+.lineaHorizontal {
+  fill: none;
+  stroke: #fbfbfb;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
+.lineaVertical {
+  fill: none;
+  stroke: #fbfbfb;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
+.afinidad,
+.riesgos,
+.fianzas {
+  fill: none;
+  stroke: #E44988;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+/* -------- Preload -------- */
+.preload {
+  height: 100vh;
+  width: 100vw;
+  background-color: #401665;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono__iconoLineas {
+  position: absolute;
+  width: 10rem;
+  height: auto;
+}
+
+.icono__iconoColor,
+.preload__iconoColor {
+  position: absolute;
+  width: 10rem;
+  height: auto;
+}
+
+/* -------- Portada --------*/
+.portada {
+  height: 100%;
+  width: 100%;
+  background-color: #401665;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono__logoLineasBlanco {
+  position: absolute;
+  width: 40%;
+  height: auto;
+}
+
+.icono__logoColorBlanco {
+  position: absolute;
+  width: 40%;
+  height: auto;
+}
+
+.icono__lema {
+  position: absolute;
+  width: 70%;
+  height: 50vh;
+}
+
+/* -------- Ttimeline --------*/
+.timeline {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.timeline__espacioTiempo {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.timeline__linea {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.timeline__linea .raya {
+  width: 100%;
+  height: 2px;
+}
+.timeline__fechas {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.timeline__year {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+  transition: 0.3s;
+  background-color: transparent;
+}
+.timeline__year .fecha {
+  font-size: 90%;
+  font-weight: 100;
+  color: #796b86;
+  padding-bottom: 0.5rem;
+}
+.timeline__year .pinHoverActive {
+  width: 1px;
+  height: 2rem;
+  background-color: #796b86;
+  display: none;
+}
+.timeline__year .pin {
+  width: 8px;
+  height: 2rem;
+}
+.timeline__year:hover .fecha {
+  color: #B5006B;
+}
+.timeline__year:hover .pinHoverActive {
+  background-color: #B5006B;
+}
+.timeline__year.active .fecha {
+  color: #ffffff;
+}
+.timeline__informacion {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timeline__informacion .tabcontent {
+  display: none;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.timeline__informacion .tabcontent h2 {
+  padding: 0 0 2rem 0;
+  font-weight: 200;
+  font-size: 3rem;
+}
+.timeline__informacion .tabcontent {
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* -------- Nosotros -------- */
+.nosotros {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #401665;
+}
+.nosotros__desingLeft {
+  width: 25vw;
+  height: 100%;
+}
+.nosotros__informacion {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  color: white;
+}
+.nosotros__informacion h4 {
+  text-align: center;
+}
+.nosotros__informacion p {
+  text-align: center;
+  font-weight: 100;
+}
+.nosotros__desingRight {
+  width: 25vw;
+  height: 100%;
+}
+
+/* -------- Lo Que Nos Guia -------- */
+.loQueNosGuia {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #401665;
+}
+.loQueNosGuia__desingLeft {
+  width: 25vw;
+  height: 100%;
+}
+.loQueNosGuia__informacion {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  color: white;
+}
+.loQueNosGuia__informacion h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.loQueNosGuia__informacion p {
+  text-align: center;
+  font-weight: 100;
+}
+.loQueNosGuia__desingRight {
+  width: 25vw;
+  height: 100%;
+}
+
+/* -------- Lo Que Nos Ha Formado -------- */
+.loQueNosHaFormado {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #401665;
+}
+.loQueNosHaFormado__titulo {
+  text-align: center;
+  color: white;
+}
+
+/* -------- Contenedor Slider -------- */
+.contenedorServicios {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+}
+.contenedorServicios__1 {
+  height: auto;
+  width: 50vw;
+}
+.contenedorServicios__2 {
+  height: auto;
+  width: 50vw;
+}
+.contenedorServicios__3 {
+  height: auto;
+  width: 50vw;
+}
+
+.formulario {
+  height: 100%;
+  width: 100%;
+}
+
+.end {
+  height: 100%;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+/* -------- Contenedor Slider -------- */
+body {
+  --ceniza: #fbfbfb;
+  --oxford: #262626;
+  --morado: #401665;
+}
+
+.Sekura__bloqueInformacion {
+  width: 40vw;
+}
+.Sekura__logoSmall {
+  height: 1.5rem;
+}
+.Sekura__nombreSeccion {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 1rem 0;
+}
+.Sekura__titulo {
+  font-weight: 300;
+  color: var(--morado);
+}
+.Sekura__informacion p {
+  margin: 1rem 0;
+  font-size: 14px;
+}
+.Sekura__bloqueInformacionBlanco, .Sekura__bloqueInformacionBlanco .Sekura__nombreSeccion, .Sekura__bloqueInformacionBlanco .Sekura__titulo, .Sekura__bloqueInformacionBlanco .Sekura__informacion p {
+  color: var(--ceniza);
+}
+
+.menuSekura {
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--morado);
+}
+.menuSekura__logo {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menuSekura .isologo {
+  height: 3.5vh;
+}
+.menuSekura__menu {
+  width: 40vw;
+  height: 100%;
+}
+
+.portadaSekura {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--oxford);
+}
+
+.nosotrosSekura {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ceniza);
+}
+.nosotrosSekura__collage {
+  width: 40vw;
+  height: 100%;
+}
+
+.loQueNosGuiaSekura {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ceniza);
+}
+.loQueNosGuiaSekura__trenzado {
+  width: 40vw;
+  height: 100%;
+}
+
+.loQueNosHaFormadoSekura {
+  width: 100vw;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--morado);
+}
+.loQueNosHaFormadoSekura .Sekura__bloqueInformacionBlanco {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.loQueNosHaFormadoSekura .Sekura__bloqueInformacionBlanco .Sekura__nombreSeccion, .loQueNosHaFormadoSekura .Sekura__bloqueInformacionBlanco .Sekura__titulo, .loQueNosHaFormadoSekura .Sekura__bloqueInformacionBlanco .Sekura__informacion p {
+  text-align: center;
+}
+
+.productos {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--oxford);
+  /* Style the tab */
+  /* Style the buttons that are used to open the tab content */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+}
+.productos__botones {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.productos__botones button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.productos__botones button:hover {
+  background-color: #ddd;
+}
+.productos__botones button.active {
+  background-color: #ccc;
+}
+.productos__informacion {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productos__informacion .productoContenido {
+  display: none;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid orange;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 40vw;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activo, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: "➕";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.activo:after {
+  content: "➖";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.acordeones {
+  width: 40vw;
+}
